@@ -10,24 +10,7 @@ import matplotlib.pyplot as plt
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.layers import Dense, Conv2D, Flatten, Dropout, MaxPooling2D
-
-# %% HELPER FUNCTION
-
-class MyUtils:
-    @staticmethod
-    def maybeMakeDir(path):
-        if not os.path.exists(path):
-            os.makedirs(path)
-        return os.path.exists(path)
-    @staticmethod
-    def print(data) :
-        print('');
-        print('');
-        print('');
-        repr(data)
-        print('');
-        print('');
-        print('');
+from MyUtils import MyUtils
 
 # %% DEFINE VARIABLES
 
