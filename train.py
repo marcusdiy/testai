@@ -18,17 +18,16 @@ TRAIN_DIR = 'train'
 TEST_DIR = 'test'
 MODEL_DIR = 'model'
 LOGS_DIR = 'logs'
-
-TRAIN_COUNT = len(os.listdir(TRAIN_DIR))
-TEST_COUNT = len(os.listdir(TEST_DIR))
-
-BATCH_SIZE = TRAIN_COUNT
-EPOCHS = 100
+BATCH_SIZE = 39
+EPOCHS = 10
 IMG_HEIGHT = 150
 IMG_WIDTH = 150
 DEBUG = True
 
 # %% DATAGEN SETUP
+
+TRAIN_COUNT = len(os.listdir(TRAIN_DIR))
+TEST_COUNT = len(os.listdir(TEST_DIR))
 
 train_datagen = ImageDataGenerator(rescale=1./255)
 test_datagen = ImageDataGenerator(rescale=1./255)
